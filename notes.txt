@@ -1,0 +1,9 @@
+## for security.json ##
+These are your firebase security rules - 
+put them in the "Security & Rules" tab of your database
+
+Line 4:
+// won't let people delete an existing room
+
+Line 8: 
+// only the store owner can edit the data
