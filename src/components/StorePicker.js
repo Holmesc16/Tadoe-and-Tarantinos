@@ -5,7 +5,7 @@ class StorePicker extends React.Component {
         return (
             <div>
                 
-                <h1 id="title">Tadoe &amp; Tarantino<sup>'</sup>s</h1>
+                <h1 id="title">Tadoe &amp; Tarantino's</h1>
                 <img id="shop" src="shop.png" alt=""/>
                 <form className="store-selector">
                     <h2>Please Enter a Store</h2>

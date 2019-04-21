@@ -237,7 +237,11 @@
     margin-top: 30px;
     text-shadow: 0px 8px #000;
   }
-
+  h3.tagline {
+    text-align: center;
+    font-size: 27px;
+    line-height: 34px;
+}
   h3,
   h4,
   h5,
@@ -258,8 +262,8 @@
     text-align: center;
   }
   header.top h1 {
-    font-size: 14.4rem;
-    line-height: 0.7;
+    font-size: 4.8rem;
+    line-height: 1.1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -267,23 +271,18 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  header.top h1 .ofThe {
-    display: -webkit-box;
-    display: -ms-flexbox;
+  header.top span.ofThe {
     display: flex;
     font-size: 3rem;
-    color: #f5a623;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background: url("images/anchor.svg") center no-repeat;
-    background-size: cover;
+    height: 165px;
+    margin-bottom: 13px;
+    justify-content: center;
+    align-items: center;
+    background: url(/static/media/shop.c1164411.svg) center no-repeat;
+    background-size: contain;
     padding: 0 1rem;
   }
-  header.top h1 .ofThe .of {
+  header.top span.ofThe span.of {
     padding-right: 2rem;
     position: relative;
     right: -0.5rem;
@@ -291,7 +290,7 @@
   header.top h3 {
     margin: 0;
     font-size: 2rem;
-    color: #f5a623;
+    color: #090909;
     position: relative;
     display: inline-block;
   }
@@ -306,7 +305,6 @@
   header.top h3:after {
     display: block;
     z-index: 1;
-    background: #000;
     position: absolute;
     width: 130%;
     height: 1px;

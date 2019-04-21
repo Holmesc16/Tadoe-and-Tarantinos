@@ -1,8 +1,22 @@
 import React from 'react'
 import { render } from 'react-dom'
-import StorePicker from './components/StorePicker'
-import './css/styles.css'
-import App from './components/App'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
-//render(<StorePicker/>, document.querySelector('#main'))
-render(<App/>, document.querySelector('#main'))
+import App from './components/App'
+import StorePicker from './components/StorePicker'
+import NotFound from './components/NotFound'
+import './css/styles.css'
+
+const Root = () => {
+    return (
+            <Router>
+                 <div>
+                <Route exact path="/" component={StorePicker} />
+                <Route path="/store/:storeId" component={App} />
+                <Route component={NotFound} />
+                </div>
+            </Router>
+    )
+}
+
+render(<Root />, document.querySelector('#main'))
