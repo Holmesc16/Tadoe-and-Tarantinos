@@ -2,6 +2,8 @@ import React from 'react'
 import Header from './Header'
 import Order from './Order'
 import Inventory from './Inventory'
+import Fish from './Fish'
+
 import samples from '../samples'
 
 class App extends React.Component {
@@ -36,6 +38,9 @@ class App extends React.Component {
             <div className="catch-of-the-day">
                 <div className="menu">
                     <Header phrase="San Francisco's Ammunition and Seafood Mercantile" />
+                    <ul>
+                        <Fish/>
+                    </ul>
                 </div>
                 <Order/>
                 <Inventory addFish={this.addFish} loadSamples={this.loadSamples}/>
